@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> Challenge </title>
+
+    <style>
+        *{
+            margin: 0px; padding: 0px;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: sans-serif;
+            background-color: black;
+        }
+
+        /* Background */
+        #background {
+            width: 100%;
+            height: 1500px;
+            position: absolute;
+            top: 200px;
+            background-image: url(images/bg-2.png);
+
+        }
+
+
+        /* Main Container */
+        #container {
+            width: 1000px;
+            height: 1500px;
+            border: 2px solid black;
+            margin: auto;
+            position: relative; /*can act as datum*/
+            background-image: url(images/bg-2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 0;
+            overflow: hidden;
+            padding: 0 100px;
+            box-sizing: border-box;
+            vertical-align: middle;
+        }
+
+        /* All Writings */
+        .header {
+            position: absolute;
+            color: white;
+            
+        }
+
+        .sur {
+            font-size: 100px;
+            top: 400px;
+            left: 100px;
+            z-index: 3;
+        }
+
+        .real {
+            font-size: 80px;
+            top: 600px;
+            left: 450px;
+        }
+
+        .ism {
+            font-size: 100px;
+            top: 800px;
+            left: 100px;
+            z-index: 3;
+        }
+
+        .exhibition {
+            height: 400px;
+            width: 400px;
+            /*border: 2px solid black;*/
+            left: 600px;
+            top: 1100px;
+
+        }
+
+
+        /* All Imgs */
+        .img {
+            position: absolute;
+        }
+
+        .shoe {
+            height: 200px;
+            width: 300px;
+            z-index: 2;
+            background-image: url(images/shoes.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 400px;
+            left: 400px;
+        }
+
+        .pineapple {
+            height: 400px;
+            width: 400px;
+            z-index: 3;
+            background-image: url(images/pineapple.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 660px;
+            left: 400px;
+        }
+
+        .moon {
+            height: 250px;
+            width: 250px;
+            z-index: 2;
+            background-image: url(images/moon.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 600px;
+            left: 200px;
+        }
+
+
+        /* All Lines  */
+        .longline {
+            width: 500px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+        }
+
+        .H1{
+            top: 400px;
+            left: 320px;
+        }
+
+        .H2 {
+            top: 1000px;
+            left: 100px;
+        }
+
+        .shortline {
+            position: absolute;
+            height: 10px;
+            width: 90px;
+            background-color: white;
+        }
+
+        .S1 {
+            top: 150px;
+            left: 750px;
+        }
+
+        .S2 {
+            top:1080px;
+            left: 600px;
+        }
+
+        .vertical {
+            background-color: white;
+            position: absolute;
+            width: 10px;
+        }
+
+        .V1 {
+            height: 200px;
+            margin-top: -50px;
+        }
+
+        .V2 {
+            top: 1220px;
+            left: 550px;
+            height: 300px;
+
+        }
+
+             
+
+    </style>
+
+
+</head>
+<body>
+    <div id="background">
+        <div id="container">
+            <div class="header sur">
+                <h1>SUR</h1>
+            </div>
+            <div class="header real">
+                <h1>REAL</h1>
+            </div>
+            <div class="header ism">
+                <h1>ISM</h1>
+            </div>
+        
+            <!-- Images -->
+            <div class="img shoe"></div>
+            <div class="img pineapple"></div>
+            <div class="img moon"></div>
+        
+            <!-- Long Lines -->
+            <div class="longline H1"></div>
+            <div class="longline H2"></div>
+
+            <!-- Short Lines -->
+            <div class="shortline S1"></div>
+            <div class="shortline S2"></div>
+
+            <!-- Vertical Lines -->
+            <div class="vertical V1"></div>
+            <div class="vertical V2"></div>
+        
+        <!-- Exhibition -->
+            <div class="header exhibition"> 
+                <h1 style="color: white; line-height: 50px;">EXHIBITION</h1>
+                <h2 style="color: white; line-height: 30px;">COMTEMPORARY ARTIST</h2>
+                <br />
+                <br />
+                <h2 style="color: white; line-height: 30px;">MICHEAL MIND</h2>
+                <p style="color: white;">ARTIST SURREAL COMMUNITY</p>
+                <br />
+                <h2 style="color: white; line-height: 30px;">KELLY DIOR</h2>
+                <p style="color: white;">EXHIBINIST</p>
+                <br />
+                <h2 style="color: white; line-height: 30px;">SOIL H LUNA</h2>
+                <p style="color: white;">DESIGNER. CONTEMPORARY ARTIST </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
