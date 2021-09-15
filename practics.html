@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice</title>
+
+    <style>
+        *{
+            margin:0px; padding:0%
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: #AAA7A2;
+        }
+
+        /* Container */
+        #container {
+            width: 650px;
+            height: 900px;
+            margin: auto;
+            position: relative;
+            background-color: white;
+            border: 2px solid black;
+            background-image: url(images/bg-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*padding: 50px 0;
+            box-sizing: border-box;*/
+            margin: 50px auto;
+            overflow: hidden;
+        }
+
+        /* Big Hexagon */
+        .Big {
+            position: absolute;
+            width: 300px; 
+            height: 173.21px;
+            background-color: #FFE51C;
+            margin: 86.60px 0;
+            left: 420px;
+            transform: rotate(55deg);
+            }
+
+            .Big:before,
+            .Big:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 150px solid transparent;
+            border-right: 150px solid transparent;
+            }
+
+            .Big:before {
+            bottom: 100%;
+            border-bottom: 86.60px solid #FFE51C;
+            }
+
+            .Big:after {
+            top: 100%;
+            width: 0;
+            border-top: 86.60px solid #FFE51C;
+            }
+
+
+            /* Medium Hex */
+            .Medium {
+            position: relative;
+            width: 250px; 
+            height: 144.34px;
+            background-color: #F5F5F5;
+            margin: 72.17px 0;
+            left: 250px;
+            top: 170px;
+            }
+
+            .Medium:before,
+            .Medium:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 125px solid transparent;
+            border-right: 125px solid transparent;
+            }
+
+            .Medium:before {
+            bottom: 100%;
+            border-bottom: 72.17px solid #F5F5F5;
+            }
+
+            .Medium:after {
+            top: 100%;
+            width: 0;
+            border-top: 72.17px solid #F5F5F5; 
+            }
+
+            /* Small Hex */
+            .Small {
+            position: absolute;
+            width: 250px; 
+            height: 115.47px;
+            background-color: #F5F5F5;
+            margin: 57.74px 0;
+            left: 480px;
+            top: 380px;
+
+            }
+
+            .Small:before,
+            .Small:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            }
+
+            .Small:before {
+            bottom: 100%;
+            border-bottom: 57.74px solid #F5F5F5;
+            }
+
+            .Small:after {
+            top: 100%;
+            width: 0;
+            border-top: 57.74px solid #F5F5F5;
+            }
+
+            /* Text */
+            .top{
+                position: absolute;
+                width: 280px;
+                height: 120px;
+                /*background-color: white;*/
+                top: 70px;
+                left: 30px;
+            }
+
+            .bot {
+                position: absolute;
+                width: 250px;
+                height: 300px;
+                left: 20px;
+                top: 510px;
+               /* border: 2px solid black;*/
+
+            }
+
+            .link{
+                position: absolute;
+                width: 250px;
+                height: 50px;
+                left: 20px;
+                top: 850px;
+            }
+
+
+
+
+
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="container"> 
+
+        <!-- Hex -->
+        <div class="hexagon Big"></div>
+        <div class="hexagon Medium"></div>
+        <div class="hexagon Small"></div>
+
+        <!-- Text Top -->
+        <div class="header top">
+            <h style="font-size:55px; color: white;">HEADLINE</h>
+            <h2 style="color: #168E8F;font-size: 30px; line-height: 50px;">SPACE HERE</h2>
+            <h6 style="color: #168E8F;">TEXT TEXT TEXT TEXT</h6>
+        </div>
+
+        <!-- Text Bot -->
+        <div class="header bot">
+            <h2 style="color: #168E8F;font-size: 30px; line-height: 50px;">TITLE TEXT</h2>
+            <p style="color: white;; font-size: 10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.TWhy do we use it? <br/> <br/>
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+        </div>
+
+        <!-- Text Link -->
+        <div class="header link">
+            <h4 style="color: #168E8F ;">Companylink.com</h4>
+        </div>
+
+
+           
+        
+    </div>  
+</body>
+</html>
